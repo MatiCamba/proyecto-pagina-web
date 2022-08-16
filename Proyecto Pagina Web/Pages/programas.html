@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triskel Balance Fitness</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_menu"> 
+            <ul class="menu"> 
+                <li class="logo"><a href="../index.html"><img src="../imagenes/logotitulo.png" alt="logo" class="logo"></a></li> 
+                <li class="item"><a class="link" href="quienes-somos.html">Quienes Somos</a></li> 
+                <li class="item"><a class="link" href="que-es-crossfit.html">Que es Crossfit</a></li> 
+                <li class="item"><a class="link" href="coachs.html">Coachs</a></li> 
+                <li class="item "><a class="link" href="programas.html">Programas</a></li> 
+                <li class="item"><a class="link" href="contactanos.html">Contacto</a> 
+                </li> <li class="item button"><a href="#">Regristrarse</a></li> 
+                <li class="item button secondary"><a href="#">Ingresar</a></li> 
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
+            </ul> 
+        </nav>
+    </header>
+    <div class="grid-layout">
+        <div class="caja c1">
+            <H1 class="titulo__3 animate__animated animate__lightSpeedInLeft">Programas</H1>
+        </div>
+            <div class="caja c2">
+                <H2 class="titulo__4">TRISKEL 60</H2>
+                <img src="../imagenes/triskel60.png" alt="Triskel60" class="imagen">
+                <p class="cajita">El programa Triskel 60 es una guía de capacitación fácil de seguir para hacer más en menos tiempo. Para todos, desde principiantes hasta atletas avanzados, cada sesión se puede completar en 1 hora. Triskel 60 incluye movimientos fundamentales básicos y avanzados de CrossFit, así como diferentes niveles de rendimiento para permitir diferentes habilidades físicas y disponibilidad de equipos. No se requiere equipo especial ya que también hay una opción de peso corporal disponible. Para completar el programa, se brindan consejos para mejorar la técnica y consejos de recuperación.
+                Como atleta, usted controla la intensidad de cada entrenamiento y existe una interacción constante y el apoyo del equipo de Triskel a través de las redes sociales, la aplicación de programación y el correo electrónico.</p>
+            </div>
+            <div class="caja c3">   
+            <h2 class="titulo__4">MASTERS</h2>
+            <img src="../imagenes/Crossfitmasters.png" alt="Masters" class="imagen">
+            <p class="cajita">Mejora tu rendimiento atlético con nuestro programa de competencia Masters. Queremos darle a la comunidad de máster la oportunidad de llevar su entrenamiento al siguiente nivel ofreciéndoles una programación de estilo competitivo, similar a la de los atletas que siguen en Triskel Completo.
+            Esta planificacion es para atletas de todos los niveles, mayores de 35 años, que buscan una programación personalizada. Esta pista también brindará orientación para los estudiantes de maestría que buscan participar en The CrossFit Open, Age Group Qualifiers y CrossFit Games en su grupo de edad.</p>
+            </div>  
+            <div class="caja c4">
+            <h2 class="titulo__4">PLANIFICACION ATLETA</h2>
+            <img src="../imagenes/Crossfitcompleta.png" alt="Atletas" class="imagen">
+            <p class="cajita">Para los atletas más avanzados, ofrecemos programación basada en competencias que les permite entrenar como los más aptos del mundo. Este programa le permite la experiencia completa y ofrece más información sobre cómo lograr el máximo rendimiento en los niveles más altos. 
+            Cada día tendrá la posibilidad de seleccionar la opción deseada para su nivel de forma física: Nivel 3: Atletas avanzados - Sancionados/Regionales/Juegos de Crossfit Atletas Nivel 2: Intermedios/Avanzados - Atletas aspirantes a sancionados/regionales Nivel 1: Intermedio - Crossfit Atletas abiertos o entusiastas del fitness.</p>
+            </div>
+        </div>  
+        <footer>
+            <h4>copyright - Todos los derechos reservados</h4>
+            <p>seguinos en nuetras redes</p>
+            <div class="redes_container">
+                <ul>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+<script> $(function() { 
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) { 
+                $(".item").removeClass("active"); 
+                    $(this).find("a").html("<i class='fas fa-bars'></i>"); } 
+                        else { $(".item").addClass("active"); 
+                            $(this).find("a").html("<i class='fas fa-times'></i>"); } }); });
+</script>
+</html>

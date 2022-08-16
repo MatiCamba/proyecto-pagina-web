@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="triskel.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Crossfit, entrenamiento funcional, programas de entrenamiento, entrenamiento personalizado">
+    <meta name="description" content="Trsikel balances fitness es un lugar dedicado a mejorar  la calidad de vida de las personas a traves del entrenamiento">
+    <meta name="author" content="Matias Cambareri">
+    <title>Triskel Balance Fitness</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <nav class="nav_menu"> 
+                <ul class="menu"> 
+                    <li class="logo"><a href="#"><img src="./imagenes/logotitulo.png" alt="logo" class="logo"></a></li> 
+                    <li class="item"><a class="link" href="./Pages/quienes-somos.html">Quienes Somos</a></li> 
+                    <li class="item"><a class="link" href="./Pages/que-es-crossfit.html">Que es Crossfit</a></li> 
+                    <li class="item"><a class="link" href="./Pages/coachs.html">Coachs</a></li> 
+                    <li class="item "><a class="link" href="./Pages/programas.html">Programas</a></li> 
+                    <li class="item"><a class="link" href="./Pages/contactanos.html">Contacto</a> 
+                    </li> <li class="item button"><a href="#">Regristrarse</a></li> 
+                    <li class="item button secondary"><a href="#">Ingresar</a></li> 
+                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
+                </ul> 
+            </nav>
+        </header>
+            <article>
+                    <a class="quienessomos" href="pages/quienes-somos.html"><H2>Quienes Somos</H2></a>
+                    
+                    <a class="queescrossfit" href="pages/que-es-crossfit.html"><H2>Que es Crossfit</H2></a>
+
+                    <a class="coachs" data-aos="fade-right" href="pages/coachs.html"><H2>Coachs</H2></a>
+
+                    <a class="programas" href="pages/programas.html"><H2>Programas</H2></a>
+            </article>
+            <form>
+                <H2 id="codigo" class="titulo">Contactanos</H2>
+                <p class="descrip">Para contactarnos por cualquier pregunta, inquietud o problema, completa el formulario a continuación. Un miembro del equipo de Triskel se pondrá en contacto lo antes posible para ayudarte. Dejanos todos los detalles necesarios en tu consulta para que podamos brindarle el mejor servicio.</p>
+                <div class="form-control">
+                    <input type="value" required="">
+                    <label>
+                        <span style="transition-delay:0ms">N</span>
+                        <span style="transition-delay:50ms">o</span>
+                        <span style="transition-delay:100ms">m</span>
+                        <span style="transition-delay:150ms">b</span>
+                        <span style="transition-delay:200ms">r</span>
+                        <span style="transition-delay:250ms">e</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <input type="value" required="">
+                    <label>
+                        <span style="transition-delay:0ms">A</span>
+                        <span style="transition-delay:50ms">p</span>
+                        <span style="transition-delay:100ms">e</span>
+                        <span style="transition-delay:150ms">l</span>
+                        <span style="transition-delay:200ms">l</span>
+                        <span style="transition-delay:250ms">i</span>
+                        <span style="transition-delay:300ms">d</span>
+                        <span style="transition-delay:350ms">o</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <input type="value" required="">
+                    <label>
+                        <span style="transition-delay:0ms">T</span>
+                        <span style="transition-delay:50ms">e</span>
+                        <span style="transition-delay:100ms">l</span>
+                        <span style="transition-delay:150ms">e</span>
+                        <span style="transition-delay:200ms">f</span>
+                        <span style="transition-delay:250ms">o</span>
+                        <span style="transition-delay:300ms">n</span>
+                        <span style="transition-delay:350ms">o</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <input type="value" required="">
+                    <label>
+                        <span style="transition-delay:0ms">E</span>
+                        <span style="transition-delay:50ms">-</span>
+                        <span style="transition-delay:100ms">m</span>
+                        <span style="transition-delay:150ms">a</span>
+                        <span style="transition-delay:200ms">i</span>
+                        <span style="transition-delay:250ms">l</span>
+                    </label>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu consulta"></textarea><br>
+                <button class="button2" role="button">Enviar</button>
+            </form>
+        <footer class="footer">
+            <h4>copyright - Todos los derechos reservados</h4>
+            <p>seguinos en nuetras redes</p>
+            <div class="redes_container">
+                <ul>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script> $(function() { 
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) { 
+                    $(".item").removeClass("active"); 
+                        $(this).find("a").html("<i class='fas fa-bars'></i>"); } 
+                            else { $(".item").addClass("active"); 
+                                $(this).find("a").html("<i class='fas fa-times'></i>"); } }); });
+</script>
+</html>

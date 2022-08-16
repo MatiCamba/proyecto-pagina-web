@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triskel Balance Fitness</title>
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_menu"> 
+            <ul class="menu"> 
+                <li class="logo"><a href="../index.html"><img src="../imagenes/logotitulo.png" alt="logo" class="logo"></a></li> 
+                <li class="item"><a class="link" href="quienes-somos.html">Quienes Somos</a></li> 
+                <li class="item"><a class="link" href="que-es-crossfit.html">Que es Crossfit</a></li> 
+                <li class="item"><a class="link" href="coachs.html">Coachs</a></li> 
+                <li class="item "><a class="link" href="programas.html">Programas</a></li> 
+                <li class="item"><a class="link" href="contactanos.html">Contacto</a> 
+                </li> <li class="item button"><a href="#">Regristrarse</a></li> 
+                <li class="item button secondary"><a href="#">Ingresar</a></li> 
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
+            </ul> 
+        </nav>
+    </header>
+        <H1 class="titulo__3">Coachs</H1>
+        
+        <H2>Que hace un Coach???</H2>
+
+        <p>BUSCA PERFECCIONAR EL MOVIMIENTO HUMANO<br>
+        
+            Para esto se basa en 3 variables que son fundamentales:<br>
+            <br>
+            <b>SEGURIDAD:</b><br>
+            -Sus atletas se mantienen sanos<br>
+            -Sabe como adecuar el entrenamiento para que cada uno de sus alumnos reciban el estímulo buscado y que puedan seguir entrenando sin tener lesiones<br>
+            -Siempre hay riesgo a alguna lesión, pero, minimiza este riesgo usando la técnica, progresiones y carga adecuada para sus alumnos<br>
+            <br>
+            <b>EFICACIA:</b><br>
+            -Las adaptaciones/resultados del entrenamiento<br>
+            -Sus alumnos van mejorando y pueden realizar mas ejercicios y de mejor manera<br>
+            -Sus alumnos se vuelven mas fuertes y seguros al moverse<br>
+            <br>
+            <b>EFICIENCIA:</b><br>
+            -Las mejoras y adaptaciones se ven relativamente rápido<br>
+            -Sus alumnos/atletas logran lo que buscan en un tiempo razonable<br>
+            <br>
+            Se necesita un equilibrio entre estas 3 cosas, Buscar obtener resultados demasiado rápido, puede tener un riesgo de seguridad muy alto. Minimizar este riesgo al máximo posible, hace que las adaptaciones tarden demasiado en llegar. Un buen coach debe tener un equilibrio entre las 3, logrando resultados relativamente rápidos manteniendo seguros a sus atletas
+            
+            Para esto un COACH, debe mantener y elevar los standares de movimientos en sus clases.<br>
+            <br>
+            <b>Que tan bien se mueven sus alumnos?</b><br>
+            
+            -Para lograr eso, debe pasar una parte de sus clases, ENSEÑANDO, CORRIGIENDO Y REFINANDO la técnica!
+            
+            -Sus clases no deben ser solamente chequear items de una lista para que se hagan muchas cosas (demasiadas) dentro de 1 hr. Un solo wod es mas que suficiente-
+            
+            La parte más importante de su trabajo, ocurre durante el Wod, corrigiendo y mejorando a sus alumnos bajo fatiga y sabiendo manejar su umbral de velocidad
+            
+            Pero también hace mucho más que todo eso. También inspira a sus atletas. Se preocupa por ellos. Marca el rumbo con el ejemplo, se preocupa por su salud y su nutrición. Es “psicólogo, amigo, confidente, autoridad, padre (muchas veces), maestro” de todos sus alumnos<br>
+            <br>
+            🥇SER COACH es un trabajo de 24 hs.<br>
+            🥈SER COACH es muy demandante<br>
+            🥉SER COACH es lo mas lindo que hay<br>
+            </p>
+
+            <h2>Nuestro Head Coach</h2>
+            <Div>
+            <H3>Matias Cambareri</H3>
+            <img src="../imagenes/Headcoach.png" height="250px">
+            <H4>Experciencia</H4>
+            <ul>
+                <li>Crossfit Level 1</li>
+                <li>Crossfit Gymnastic Level 1</li>
+                <li>Kettebell - Jeronimo Milo</li>
+                <li>Entrenamiento de la Fuerza - Ezequiel Costa</li>
+                <li>Kettebell - Mariano Ocampo</li>
+                <li>Oly Team - Fabian Pereyra</li>
+                <li>Instructor Level 1 - Ricky Wagner</li>
+            </ul>
+            </Div>
+        <footer>
+            <h4>copyright - Todos los derechos reservados</h4>
+            <p>seguinos en nuetras redes</p>
+            <div class="redes_container">
+                <ul>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+<script> $(function() { 
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) { 
+                $(".item").removeClass("active"); 
+                    $(this).find("a").html("<i class='fas fa-bars'></i>"); } 
+                        else { $(".item").addClass("active"); 
+                            $(this).find("a").html("<i class='fas fa-times'></i>"); } }); });
+</script>
+</html>

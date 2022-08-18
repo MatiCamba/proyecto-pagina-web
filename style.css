@@ -616,6 +616,52 @@ footer{
 
 /* Aqui Termina Que es Crossfit*/
 
+/* Aqui comienza Coachs*/
+
+.contenedor_4 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr 1.5fr 1fr; 
+  gap: 30px 0px; 
+  grid-template-areas: 
+    "titulo__3"
+    "quehace"
+    "headcoach"; 
+}
+
+.titulo__3 { 
+  grid-area: titulo__3; 
+  max-height: 30%;
+}
+
+.quehace { 
+  grid-area: quehace; 
+  max-width: 70%;
+  margin-inline: 15%;
+  }
+
+.headcoach {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Foto Articulo Articulo"
+    "Foto Articulo Articulo"
+    "Foto Articulo Articulo"; 
+  grid-area: headcoach; 
+}
+
+.Foto { 
+  grid-area: Foto; 
+}
+
+.Articulo { 
+  grid-area: Articulo; 
+}
+
+/* Aqui Termina Coachs*/
+
   /* Aqui comienza Programas*/
 
   .grid-layout{

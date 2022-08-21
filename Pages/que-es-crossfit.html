@@ -8,76 +8,212 @@
     <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <nav class="nav_menu"> 
-            <ul class="menu"> 
-                <li class="logo"><a href="../index.html"><img src="../imagenes/logotitulo.png" alt="logo" class="logo"></a></li> 
-                <li class="item"><a class="link" href="quienes-somos.html">Quienes Somos</a></li> 
-                <li class="item"><a class="link" href="que-es-crossfit.html">Que es Crossfit</a></li> 
-                <li class="item"><a class="link" href="coachs.html">Coachs</a></li> 
-                <li class="item "><a class="link" href="programas.html">Programas</a></li> 
-                <li class="item"><a class="link" href="contactanos.html">Contacto</a> 
-                </li> <li class="item button"><a href="#">Regristrarse</a></li> 
-                <li class="item button secondary"><a href="#">Ingresar</a></li> 
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
-            </ul> 
-        </nav>
-    </header>
+        <header>
+            <nav class="navbar navbar-expand-lg" style="background-color: #fc8a3fe1;">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="../index.html"><img src="../imagenes/logotitulo.png" alt="Logo" width="100%" height="90rem"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-1">
+                            <a class="nav-link " aria-current="page" href="./quienes-somos.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item px-1">
+                            <a class="nav-link active" href="./que-es-crossfit.html">Que es Crossfit</a>
+                            </li>
+                            <li class="nav-item px-1">
+                            <a class="nav-link" href="./coachs.html">Coachs</a>
+                            </li>
+                            <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" href="./programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./programas.html">Triskel60</a></li>
+                                <li><a class="dropdown-item" href="./programas.html">Masters</a></li>
+                                <li><a class="dropdown-item" href="./programas.html">Atleta</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                                <!-- Button trigger modal -->
+                            <li class="nav-item"></li>
+                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ingresa / Resgistrate
+                            </button>
+                            <li class="nav-item">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel"><Strong> Ingresa / Resgitrate </Strong></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container" id="container">
+                                            <div class="form-container sign-up-container">
+                                                <form class="form-nav" action="#">
+                                                    <h1 Class="titulo-nav">Crea tu Cuenta</h1>
+                                                    <div class="redes_container">
+                                                        <ul>
+                                                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="span-nav"><Strong>Ingresa tus Datos</Strong></span>
+                                                    <input class="input-nav" type="text" placeholder="Nombre" />
+                                                    <input class="input-nav" type="email" placeholder="Email" />
+                                                    <input class="input-nav" type="password" placeholder="Contraseña" />
+                                                    <button>Registrarse</button>
+                                                </form>
+                                            </div>
+                                            <div class="form-container sign-in-container">
+                                                <form class="form-nav" action="#">
+                                                    <h1 Class="titulo-nav">Ingresar</h1>
+                                                    <div class="redes_container">
+                                                        <ul>
+                                                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <span class="span-nav"><Strong>Ingresa a tu cuenta</Strong></span>
+                                                    <input class="input-nav" type="email" placeholder="Email" />
+                                                    <input class="input-nav" type="password" placeholder="Contraseña" />
+                                                    <a href="#">Olvidaste tu Contraseña?</a>
+                                                    <button>Ingresar</button>
+                                                </form>
+                                            </div>
+                                            <div class="overlay-container">
+                                                <div class="overlay">
+                                                    <div class="overlay-panel overlay-left">
+                                                        <h1 Class="titulo-nav">Bienvenido Atleta!</h1>
+                                                        <p class="p-nav">Para ingresar a tu Programa de entrenamiento, inicie sesion con sus datos personales</p>
+                                                        <button class="ghost" id="signIn">Ingresar</button>
+                                                    </div>
+                                                    <div class="overlay-panel overlay-right">
+                                                        <h1 Class="titulo-nav">Bienvenido a Triskel Balances Fitness</h1>
+                                                        <p class="p-nav">Por Favor ingresa tus datos personales para crear una cuenta y poder comenzar a elegir tu plan de entrenamiento</p>
+                                                        <button class="ghost" id="signUp">Registrate</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
     <div class="contenedor_3">
         <h1 class="titulo__3 animate__animated animate__lightSpeedInLeft">Que es Crossfit</h1>
-        <section class="quees">
-            <p> <strong class="titulo_5">Que es Crossfit???</strong><br><br>
-                CrossFit es el deporte de moda. Se basa en ejercicios funcionales realizados a alta intensidad. No hay rutinas ni excusas, cada día tu entreno es distinto. Se adapta a todos los niveles y está dirigido a cualquier persona.
+        </div>
+        <div class="div container2">
+        <div class="accordion m-3" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Que es Crossfit???</button></h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                <p>CrossFit es el deporte de moda. Se basa en ejercicios funcionales realizados a alta intensidad. No hay rutinas ni excusas, cada día tu entreno es distinto. Se adapta a todos los niveles y está dirigido a cualquier persona.
                 Entrena el cuerpo ejerciendo diferentes disciplinas al mismo tiempo, tales como la halterofilia, el atletismo, la gimnasia y sobre todo la condición metabólica. Este programa se compone de deporte de resistencia y de diferentes actividades físicas. Se basa en el trabajo de diferentes capacidades y habilidades: resistencia cardiovascular y respiratoria, resistencia muscular, fuerza, flexibilidad, potencia, velocidad, agilidad, psicomotricidad, equilibrio y precisión. Todas estas actividades intervienen enérgicamente para una puesta en forma eficaz.</p>
-        </section>
-        <section class="dedonde">
-            <p> <strong class="titulo_5">De Donde Viene el Crossfit???</strong><br><br>
-                El origen del CrossFit parece estar en los años 70's en el sur de California. Un estudiante universitario llamado Glen Glassman. Al trabajar con los atletas en varios gimnasios del sur de California, se da cuenta de que las rutinas de culturismo tradicionales eran ineficientes y no mejoran la condición física en relación con la cantidad de tiempo de formación dedicado, de esta manera decide centrarse en un programa de entrenamiento que hace hincapié en los variados movimientos funcionales realizados a alta intensidad. En 1995 en Santa Cruz California, se abre el primer sitio oficial de entrenamiento de CrossFit y se convierte en el epicentro del movimiento. Greg Glassman empezó a usar la técnica para entrenar a policías en California. Posteriormente fue usado para el entrenamiento de marines, bomberos y militares norteamericanos. Hoy, Greg Glassman continúa a la cabeza del movimiento con más de 2.700 Box de CrossFit afiliados a su lado.</p>
-        </section>
-        <section class="aquien">
-            <p> <strong class="titulo_5">A Quien esta dirigido???</strong><br><br>
-                Este deporte puede practicarlo cualquier persona esté o no en forma física. De hecho, el éxito del CrossFit reside en su facilidad para adaptarse a cualquier condición.
-                Es un sistema de entrenamiento perfecto para todo el mundo, en su nivel más alto de competición encontramos gente exigente que quiere esforzarse al máximo. En un nivel más ligero se encuentra la mayoría de crossfiters en el mundo. Hombres y mujeres de todas las edades que buscan ponerse en forma, estar más ágiles, saludables y conseguir grandes resultados con su cuerpo que se notan enseguida a la vista y en su actividad diaria.</p>
-        </section>
-        <section class="wod">
-            <p> <strong class="titulo_5">Que es un Wod???</strong><br><br>
-                WOD: WORK OF DAY (Trabajo del día)
-                Es el entrenamiento que se realiza cada día. Cambia diariamente y nunca es el mismo. Ahí reside la diversión de este deporte. No te deja relajarte con entrenamientos que se repiten semana a semana y mes a mes. Y que al final acaban haciéndote abandonar.
-                CrossFit es siempre distinto, cada clase es una aventura. Por eso triunfa en todo el mundo.</p>
-        </section>
-        <section class="ejercicios">
-            <p><strong class="titulo_5">Cuales son los principales ejercicios</strong><br><br>
-            <div>
-                <ul>
-                <li>SENTADILLA LIBRE: Las sentadillas son esenciales para el bienestar. Las sentadillas pueden mejorar su atletismo significativamente y fortalecer la cadera, la espalda y las rodillas durante la vejez.</li>
-                <br>
-                <li>SENTADILLA FRONTAL: La parte más difícil de la sentadilla frontal es la posición de “rack” o estante. Practiquen hasta que sus muñecas lo sientan cómodo. Ejercitar la parada de manos puede resultar útil. Este movimiento ejercita
-                la flexibilidad de hombros y de muñecas.</li>
-                <br>
-                <li>SENTADILLA DE ARRANQUE: Las sentadillas de arranque son el ejercicio más importante, el corazón del snatch, e inigualable para desarrollar movimiento atlético efectivo. Esta variante de sentadillas son al control, la estabilidad y el equilibrio de la línea media lo que la cargada y el arranque son a la potencia: insuperables.</li>
-                <br>
-                <li>PRESS DE HOMBROS, EMPUJE DE FUERZA (PUSH PRESS), EMPUJE DE ENVIÓN (PUSH JERK): Aprender la progresión de los levantamientos que van desde el press de hombros (shoulder press), al empuje de fuerza (push press) y al empuje de envión (push jerk) ha sido por mucho tiempo primordial para el régimen de CrossFit. Esta progresión ofrece la oportunidad de adquirir algunos patrones de trabajo motriz esenciales que se encuentran en el deporte y en la vida (funcionalidad) y de mejorar al mismo tiempo la fuerza en la “zona de potencia” y en la parte superior del cuerpo.</li>
-                <br>
-                <li>PESO MUERTO: El peso muerto (Deadlift) es inigualable en términos de simplicidad e impacto y es único en su capacidad para aumentar la fuerza de la cabeza a los pies.El peso muerto, que no es más que levantar algo del piso, acompaña a la posición de pie, la carrera, el salto, el lanzamiento, en términos de funcionalidad, pero además imparte una rápida y prominente ventaja atlética como ningún otro ejercicio.</li>
-                <br>
-                <li>PESO MUERTO SUMO (SDHP): El Peso Muerto Sumo Remo (SDHP) o el «jalón sumo» en español se basa en el Peso Muerto o deadlift, simplemente ensanchando la postura, trayendo el agarre entre las rodillas, agregando un encogimiento de hombros y un tirón hacia arriba con los brazos, pero, lo más importante agregando velocidad. Este movimiento requiere de una extensión agresiva de las caderas y piernas antes del tirón de brazos.</li>
-                <br>
-                <li>CARGADA CON BALÓN MEDICINAL: La cargada con pelota medicinal sirve de fundamento para la preparación y el patrón de movimiento del Peso Muerto Sumo Remo Alto agregando un tirón debajo del objeto.</li>
-                </ul> 
+                </div>
             </div>
-            </p>
-        </section>
-        <section class="yonoquiero">
-            <p> <strong class="titulo_5">Yo no quiero ponerme todo musculoso, solo quiero adelgazar...</strong><br><br>
-                La primera impresión que tenemos de CrossFit son cuerpos muy musculados tanto de hombres como mujeres. Como casi siempre, la primera impresión es errónea. Son atletas de competición que han llevado su fitness a un nivel muy elevado.
-                Lo realmente importante es transmitir que el CroosFit es otra cosa. Es un tipo de ejercicio que acondiciona tu cuerpo, rebajando el nivel de grasa. La gran mayoría de hombres y mujeres que practican CrossFit cuentan con unos cuerpos normales, tonificados y con unos porcentajes de grasa saludables.
-                Así, que efectivamente, sí, mejorarás tu condición física rápidamente y verás resultados estéticos en tu cuerpo.</p>
-        </section>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    De Donde Viene el Crossfit???</button></h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                <p>El origen del CrossFit parece estar en los años 70's en el sur de California. Un estudiante universitario llamado Glen Glassman. Al trabajar con los atletas en varios gimnasios del sur de California, se da cuenta de que las rutinas de culturismo tradicionales eran ineficientes y no mejoran la condición física en relación con la cantidad de tiempo de formación dedicado, de esta manera decide centrarse en un programa de entrenamiento que hace hincapié en los variados movimientos funcionales realizados a alta intensidad. En 1995 en Santa Cruz California, se abre el primer sitio oficial de entrenamiento de CrossFit y se convierte en el epicentro del movimiento. Greg Glassman empezó a usar la técnica para entrenar a policías en California. Posteriormente fue usado para el entrenamiento de marines, bomberos y militares norteamericanos. Hoy, Greg Glassman continúa a la cabeza del movimiento con más de 2.700 Box de CrossFit afiliados a su lado.</p>
+                </div>
+            </div>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    A Quien esta dirigido???</button></h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                <p>Este deporte puede practicarlo cualquier persona esté o no en forma física. De hecho, el éxito del CrossFit reside en su facilidad para adaptarse a cualquier condición.
+                    Es un sistema de entrenamiento perfecto para todo el mundo, en su nivel más alto de competición encontramos gente exigente que quiere esforzarse al máximo. En un nivel más ligero se encuentra la mayoría de crossfiters en el mundo. Hombres y mujeres de todas las edades que buscan ponerse en forma, estar más ágiles, saludables y conseguir grandes resultados con su cuerpo que se notan enseguida a la vista y en su actividad diaria.</p>
+                </div>
+            </div>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                Que es un Wod???</button></h2>
+                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+                <div class="accordion-body">
+                <p><strong>WOD: WORK OF DAY (Trabajo del día)</strong>
+                    Es el entrenamiento que se realiza cada día. Cambia diariamente y nunca es el mismo. Ahí reside la diversión de este deporte. No te deja relajarte con entrenamientos que se repiten semana a semana y mes a mes. Y que al final acaban haciéndote abandonar.
+                    CrossFit es siempre distinto, cada clase es una aventura. Por eso triunfa en todo el mundo.</p>
+                </div>
+            </div>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                Cuales son los principales ejercicios</button></h2>
+                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                        <li><strong> SENTADILLA LIBRE:</strong> Las sentadillas son esenciales para el bienestar. Las sentadillas pueden mejorar su atletismo significativamente y fortalecer la cadera, la espalda y las rodillas durante la vejez.</li>
+                        <br>
+                        <li><strong>SENTADILLA FRONTAL:</strong> La parte más difícil de la sentadilla frontal es la posición de “rack” o estante. Practiquen hasta que sus muñecas lo sientan cómodo. Ejercitar la parada de manos puede resultar útil. Este movimiento ejercita
+                        la flexibilidad de hombros y de muñecas.</li>
+                        <br>
+                        <li><strong>SENTADILLA DE ARRANQUE (OHS):</strong> Las sentadillas de arranque son el ejercicio más importante, el corazón del snatch, e inigualable para desarrollar movimiento atlético efectivo. Esta variante de sentadillas son al control, la estabilidad y el equilibrio de la línea media lo que la cargada y el arranque son a la potencia: insuperables.</li>
+                        <br>
+                        <li><strong>PRESS DE HOMBROS, EMPUJE DE FUERZA (PUSH PRESS), EMPUJE DE ENVIÓN (PUSH JERK):</strong> Aprender la progresión de los levantamientos que van desde el press de hombros (shoulder press), al empuje de fuerza (push press) y al empuje de envión (push jerk) ha sido por mucho tiempo primordial para el régimen de CrossFit. Esta progresión ofrece la oportunidad de adquirir algunos patrones de trabajo motriz esenciales que se encuentran en el deporte y en la vida (funcionalidad) y de mejorar al mismo tiempo la fuerza en la “zona de potencia” y en la parte superior del cuerpo.</li>
+                        <br>
+                        <li><strong>PESO MUERTO:</strong> El peso muerto (Deadlift) es inigualable en términos de simplicidad e impacto y es único en su capacidad para aumentar la fuerza de la cabeza a los pies.El peso muerto, que no es más que levantar algo del piso, acompaña a la posición de pie, la carrera, el salto, el lanzamiento, en términos de funcionalidad, pero además imparte una rápida y prominente ventaja atlética como ningún otro ejercicio.</li>
+                        <br>
+                        <li><strong>PESO MUERTO SUMO (SDHP):</strong> El Peso Muerto Sumo Remo (SDHP) o el «jalón sumo» en español se basa en el Peso Muerto o deadlift, simplemente ensanchando la postura, trayendo el agarre entre las rodillas, agregando un encogimiento de hombros y un tirón hacia arriba con los brazos, pero, lo más importante agregando velocidad. Este movimiento requiere de una extensión agresiva de las caderas y piernas antes del tirón de brazos.</li>
+                        <br>
+                        <li><strong>CARGADA CON BALÓN MEDICINAL:</strong> La cargada con pelota medicinal sirve de fundamento para la preparación y el patrón de movimiento del Peso Muerto Sumo Remo Alto agregando un tirón debajo del objeto.</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                Yo no quiero ponerme todo musculoso, solo quiero adelgazar...</button></h2>
+                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+                <div class="accordion-body">
+                <p>La primera impresión que tenemos de CrossFit son cuerpos muy musculados tanto de hombres como mujeres. Como casi siempre, la primera impresión es errónea. Son atletas de competición que han llevado su fitness a un nivel muy elevado.
+                    Lo realmente importante es transmitir que el CroosFit es otra cosa. Es un tipo de ejercicio que acondiciona tu cuerpo, rebajando el nivel de grasa. La gran mayoría de hombres y mujeres que practican CrossFit cuentan con unos cuerpos normales, tonificados y con unos porcentajes de grasa saludables.
+                    Así, que efectivamente, sí, mejorarás tu condición física rápidamente y verás resultados estéticos en tu cuerpo.</p>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
     <footer>
         <h4>copyright - Todos los derechos reservados</h4>
             <p>seguinos en nuetras redes</p>
@@ -90,6 +226,12 @@
                 </ul>
             </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 <script> $(function() { 
     $(".toggle").on("click", function() {

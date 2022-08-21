@@ -8,161 +8,217 @@ body{
   overflow-x: hidden;
 }
 
-/* Basic styling */
+/* Nav-Bar */
 
-* { 
-  box-sizing: border-box; 
-  padding: 0; 
-  margin: 0; 
-} 
-
-body { 
-  font-family: sans-serif; 
-} 
-
-.logo{
-  width: 8rem;
-}
-nav { 
-  background: rgba(245, 132, 52, 0.908); 
-  padding: 5px 20px; 
-} 
-
-ul { 
-  list-style-type: none; 
-} 
-
-a { 
-  color: white; 
-  text-decoration: none; 
-} 
-
-a.link:hover { 
-  padding: 8px;
-  color: black;
-  border: 2px solid Black;
-  border-radius: 10px;
-  box-shadow:  3px 3px 3px;
-} 
-
-.logo a:hover { 
-  text-decoration: none; 
-} 
-
-.menu li { 
-  margin: 3px;
-  font-size: 22px; 
-  padding: 15px 5px; 
-  white-space: nowrap; 
-} 
-
-.logo a, .toggle a { 
-  font-size: 20px; 
-} 
-
-.button.secondary { 
-  border-bottom: 1px rgb(0, 0, 0) solid; 
+Header {
+	background: #f6f5f7;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 30vh;
 }
 
-/* Mobile menu */ 
-
-.menu { 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  align-items: center; 
-} 
-
-.toggle { 
-  order: 1; 
-} 
-
-.item.button { 
-  order: 2; 
-} 
-
-.item { 
-  width: 100%; 
-  text-align: center; 
-  order: 3; 
-  display: none;
-} 
-
-.item.active { 
-  display: block; 
+.titulo-nav {
+	font-weight: bold;
+	margin: 0;
 }
 
-/* Tablet menu */
-
-@media all and (min-width: 780px) { 
-  .menu { 
-      justify-content: center; 
-  } 
-  .logo { 
-      flex: 1; 
-  } 
-  .toggle { 
-      flex: 1; text-align: right; 
-  } 
-  .item.button { 
-      width: auto; 
-      order: 1; 
-      display: block; 
-  } 
-  .toggle { 
-      order: 2; 
-  } 
-  .button.secondary { 
-      border: 0; 
-  } 
-  .button a { 
-      padding: 7.5px 15px; 
-      background: rgb(35, 35, 35); 
-      border: 1px #686868 solid; 
-      border-radius: 10px;
-  } 
-  .button.secondary a { 
-      background: transparent; 
-      border-radius: 10px;
-  } 
-  .button a:hover {
-      text-decoration: none; 
-  } 
-  .button:not(.secondary) a:hover { 
-      color: black;
-      background: #ffffff; 
-      border-color: #949494; 
-  } 
-  .button.secondary a:hover { 
-      color: rgb(0, 0, 0); 
-      box-shadow: 2px 2px 3px;
-  } 
+h2 {
+	text-align: center;
 }
 
-/* Desktop menu */ 
-@media all and (min-width: 900px) { 
-  .item { 
-      display: block; 
-      width: auto; 
-  } 
-  .toggle { 
-      display: none; 
-  } 
-  .logo { 
-      order: 0; 
-  } 
-  .item { 
-      order: 1; 
-  } 
-  .button { 
-      order: 2; 
-  } 
-  .menu li { 
-      padding: 15px 10px; 
-  } 
-  .menu li.button {
-      padding-right: 0; 
-  } 
+.p-nav {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+.span-nav {
+  font-size: 20px;
+  margin: 15px;
+  color: orange;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #F2eee3;
+	background-color: #ffb158;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	border-color: rgba(255, 123, 0, 0.884);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: rgba(0, 0, 0, 0.884);
+}
+
+.form-nav {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.input-nav {
+	background-color: #f2eee3;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #F2eee3;
+	background: -webkit-linear-gradient(to right, #ffda76, #fc872e);
+	background: linear-gradient(to right, #ffda76, #fc872e);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: black;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.nav-link{
+    font-size:20px;
+    font-weight: 700;
 }
 
 /* hasta aca llega la barra de navegacion*/
@@ -240,7 +296,7 @@ article h2{
   font-size: 15px;
 }
 
-form{
+.form-contacto{
   font-family: 'Open Sans bold', sans-serif;
   width: 65vw;
   margin: auto;
@@ -254,13 +310,13 @@ form{
 color:rgb(0, 0, 0);
 }
 
-.form-control {
+.form-control2 {
   position: relative;
   margin: 20px 0 40px 40px;
-  width: 190px;
+  width: 260px;
 }
 
-.form-control input {
+.form-control2 input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
@@ -271,20 +327,20 @@ color:rgb(0, 0, 0);
   color: rgb(255, 247, 247);
 }
 
-.form-control input:focus,
-.form-control input:valid {
+.form-control2 input:focus,
+.form-control2 input:valid {
   outline: 0;
   border-bottom-color: rgb(34,34,34)
 }
 
-.form-control label {
+.form-control2 label {
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
 }
 
-.form-control label span {
+.form-control2 label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
@@ -292,14 +348,14 @@ color:rgb(0, 0, 0);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus+label span,
-.form-control input:valid+label span {
+.form-control2 input:focus+label span,
+.form-control2 input:valid+label span {
   color: rgb(34, 34, 34);
   transform: translateY(-30px);
 }
 
 textarea {
-  width: 50%;
+  width: 80%;
   margin: 0 20px 20px 40px;
   border-radius: 10px;
   padding: 7px;
@@ -317,6 +373,7 @@ textarea {
 .button2 {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 12px;
   padding: 15px 30px;
   text-align: center;
   text-transform: uppercase;
@@ -373,7 +430,7 @@ textarea {
 footer{
   margin-top: 30px;
   display: flex;
-  min-height: 50px;
+  
   width: 100%;
   background-color:rgba(249, 128, 22, 0.701);
   justify-content: space-between;
@@ -443,15 +500,22 @@ footer{
 }
 
 @media (max-width:480px){
+  header{
+    height: 15vh;
+  }
   .footer p {
     font-size: 12px;
   }
   .footer{
     font-size: 10px;
   }
-  .redes_container{
-    width: 200px;
-  } 
+  article h2{
+    height: 40vh;
+  }
+
+  .quienessomos h2{
+background-size:100vh;
+  }
 }
 /* Fin de Pagina index.html*/
 
@@ -460,7 +524,7 @@ footer{
 .contenedor_2 {
   display: grid; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr auto auto auto 1.5fr;
   gap: 30px 0px; 
   grid-template-areas: 
     "titulo__3"
@@ -473,12 +537,14 @@ footer{
 .titulo__3 { 
   grid-area: titulo__3; 
   max-width: 70%;
+  margin-top: 50px;
   margin-inline: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 70px;
+  font-weight: 700;
 }
 
 .seccion1 { 
@@ -534,86 +600,38 @@ footer{
 
 /* inicio que es crossfit*/
 
-.contenedor_3 {
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1.5fr 1fr; 
-  gap: 30px 0px; 
-  grid-template-areas: 
-    "titulo__3"
-    "quees"
-    "dedonde"
-    "aquien"
-    "wod"
-    "ejercicios"
-    "yonoquiero"; 
+.container2{
+margin-inline: 10rem;
 }
 
-.titulo__3 { 
-  grid-area: titulo__3;
+.accordion-header{
+  font-size: 25px;
 }
 
-.quees { 
-  grid-area: quees;
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.accordion-button {
+  font-size: inherit;
 }
 
-.dedonde { 
-  grid-area: dedonde; 
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.accordion-item {
+  border: 1px solid rgba(36,65 100, 0.15)
 }
 
-.wod { 
-  grid-area: wod; 
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.accordion-button:not(.collapsed){
+  color: inherit;
+  background-color: #F09819;
+  color:rgb(255, 255, 255)
 }
 
-.aquien { 
-  grid-area: aquien; 
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.accordion-button:not(.collapsed)::after{
+  filter: brightness(0%) invert(100%)
 }
 
-.ejercicios { 
-  grid-area: ejercicios; 
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  text-align: left;
-  flex-direction: column;
-}
+.accordion-button:focus{
 
-.yonoquiero { 
-  grid-area: yonoquiero;
-  max-width: 70%;
-  margin-inline: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
+background: linear-gradient(315deg, #ff9327, #dd7b20);
+box-shadow:  -5px -5px 21px #b0631a,
+            5px 5px 21px #ffaf2e;
 }
-
 /* Aqui Termina Que es Crossfit*/
 
 /* Aqui comienza Coachs*/
@@ -632,6 +650,7 @@ footer{
 .titulo__3 { 
   grid-area: titulo__3; 
   max-height: 30%;
+  margin-top: 50px;
 }
 
 .quehace { 
@@ -704,7 +723,6 @@ footer{
 
   .c1{
     grid-area: programas;
-    margin-top: 100px;
     max-height: 40%;
     
     }
@@ -766,7 +784,7 @@ footer{
   @media (max-width: 780px){
 .grid-layout{
   grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr auto auto auto;
     grid-template-areas: 
     "programas"
     "triskel60"
@@ -774,6 +792,3 @@ footer{
     "atleta";
     }
   }
-
-  
-

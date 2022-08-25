@@ -637,47 +637,36 @@ box-shadow:  -5px -5px 21px #b0631a,
 /* Aqui comienza Coachs*/
 
 .contenedor_4 {
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 0.5fr 1.5fr 1fr; 
-  gap: 30px 0px; 
-  grid-template-areas: 
-    "titulo__3"
-    "quehace"
-    "headcoach"; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  
+}
+.coach{
+  margin: 50px;
 }
 
-.titulo__3 { 
-  grid-area: titulo__3; 
-  max-height: 30%;
-  margin-top: 50px;
+.quehace{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
 }
 
-.quehace { 
-  grid-area: quehace; 
-  max-width: 70%;
-  margin-inline: 15%;
-  }
-
-.headcoach {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "Foto Articulo Articulo"
-    "Foto Articulo Articulo"
-    "Foto Articulo Articulo"; 
-  grid-area: headcoach; 
+.placas{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
 }
 
-.Foto { 
-  grid-area: Foto; 
+.coach2{
+  max-height: 70vh;
+  max-width: 60vw;
+  margin-bottom: 50px;
 }
 
-.Articulo { 
-  grid-area: Articulo; 
-}
 
 /* Aqui Termina Coachs*/
 
@@ -697,7 +686,6 @@ box-shadow:  -5px -5px 21px #b0631a,
     width:90%;
     margin: 0 auto;
     padding: 20px;
-    
   }
 
   .imagen{

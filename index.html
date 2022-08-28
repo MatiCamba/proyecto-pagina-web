@@ -18,6 +18,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
     <body>
         <header>
             <nav class="navbar navbar-expand-lg" style="background-color: #fc8a3fe1;">
@@ -29,102 +30,37 @@
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item px-1">
-                            <a class="nav-link " aria-current="page" href="./Pages/quienes-somos.html">Quienes Somos</a>
+                                <a class="nav-link " aria-current="page" href="./Pages/quienes-somos.html">Quienes Somos</a>
                             </li>
                             <li class="nav-item px-1">
-                            <a class="nav-link" href="./Pages/que-es-crossfit.html">Que es Crossfit</a>
+                                <a class="nav-link" href="./Pages/que-es-crossfit.html">Que es Crossfit</a>
                             </li>
                             <li class="nav-item px-1">
-                            <a class="nav-link" href="./Pages/coachs.html">Coachs</a>
+                                <a class="nav-link" href="./Pages/coachs.html">Coachs</a>
                             </li>
                             <li class="nav-item dropdown px-1">
-                            <a class="nav-link dropdown-toggle" href="./Pages/programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./Pages/programas.html">Triskel60</a></li>
-                                <li><a class="dropdown-item" href="./Pages/programas.html">Masters</a></li>
-                                <li><a class="dropdown-item" href="./Pages/programas.html">Atleta</a></li>
-                            </ul>
+                                <a class="nav-link dropdown-toggle" href="./Pages/programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Pages/programas.html">Triskel60</a></li>
+                                    <li><a class="dropdown-item" href="./Pages/programas.html">Masters</a></li>
+                                    <li><a class="dropdown-item" href="./Pages/programas.html">Atleta</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link" href="#codigo">Contactanos</a>
-                                <!-- Button trigger modal -->
-                            <li class="nav-item"></li>
-                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Ingresa / Resgistrate
-                            </button>
-                            <li class="nav-item">
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"><Strong> Ingresa / Resgitrate </Strong></h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container" id="container">
-                                            <div class="form-container sign-up-container">
-                                                <form class="form-nav" action="#">
-                                                    <h1 Class="titulo-nav">Crea tu Cuenta</h1>
-                                                    <div class="redes_container">
-                                                        <ul>
-                                                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                                                            <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <span class="span-nav"><Strong>Ingresa tus Datos</Strong></span>
-                                                    <input class="input-nav" type="text" placeholder="Nombre" />
-                                                    <input class="input-nav" type="email" placeholder="Email" />
-                                                    <input class="input-nav" type="password" placeholder="Contraseña" />
-                                                    <button>Registrarse</button>
-                                                </form>
-                                            </div>
-                                            <div class="form-container sign-in-container">
-                                                <form class="form-nav" action="#">
-                                                    <h1 Class="titulo-nav">Ingresar</h1>
-                                                    <div class="redes_container">
-                                                        <ul>
-                                                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                                                            <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <span class="span-nav"><Strong>Ingresa a tu cuenta</Strong></span>
-                                                    <input class="input-nav" type="email" placeholder="Email" />
-                                                    <input class="input-nav" type="password" placeholder="Contraseña" />
-                                                    <a href="#">Olvidaste tu Contraseña?</a>
-                                                    <button>Ingresar</button>
-                                                </form>
-                                            </div>
-                                            <div class="overlay-container">
-                                                <div class="overlay">
-                                                    <div class="overlay-panel overlay-left">
-                                                        <h1 Class="titulo-nav">Bienvenido Atleta!</h1>
-                                                        <p class="p-nav">Para ingresar a tu Programa de entrenamiento, inicie sesion con sus datos personales</p>
-                                                        <button class="ghost" id="signIn">Ingresar</button>
-                                                    </div>
-                                                    <div class="overlay-panel overlay-right">
-                                                        <h1 Class="titulo-nav">Bienvenido a Triskel Balances Fitness</h1>
-                                                        <p class="p-nav">Por Favor ingresa tus datos personales para crear una cuenta y poder comenzar a elegir tu plan de entrenamiento</p>
-                                                        <button class="ghost" id="signUp">Registrate</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Volver</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
                             </li>
+
+                                <!-- Boton Ingresa/ Regristrate -->
+
+                                <a class="btn btn-outline-dark" href="./Pages/Registro.html" target="_blank" role="button">Ingresa</a>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+
+                        <!-- Inicio de Navegacion por pagina principal -->
+
             <article>
                     <a class="quienessomos" data-aos="fade-up"
                     data-aos-duration="3000" href="./Pages/quienes-somos.html"><H2>Quienes Somos</H2></a>
@@ -141,6 +77,9 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" href="./Pages/programas.html"><H2>Programas</H2></a>
             </article>
+
+                        <!-- Formulario COntacto -->
+
             <form Class="form-contacto" data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
@@ -198,7 +137,7 @@
                 <button class="button2" role="button">Enviar</button>
             </form>
         <footer class="footer">
-            <h4>copyright - Todos los derechos reservados</h4>
+            <h4 Class="copy">copyright - Todos los derechos reservados</h4>
             <p>seguinos en nuetras redes</p>
             <div class="redes_container">
                 <ul>

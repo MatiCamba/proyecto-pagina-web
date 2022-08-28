@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-body{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,15 +16,20 @@ body{
 
 /* Nav-Bar */
 
-Header {
+/* ------ Pagina Registro ------*/
+
+.Body_registro {
 	background: #f6f5f7;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 30vh;
+	height: 100vh;
+	margin: -20px 0 50px;
 }
 
-.titulo-nav {
+h1 {
 	font-weight: bold;
 	margin: 0;
 }
@@ -27,7 +38,7 @@ h2 {
 	text-align: center;
 }
 
-.p-nav {
+p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -35,23 +46,31 @@ h2 {
 	margin: 20px 0 30px;
 }
 
-.span-nav {
-  font-size: 20px;
-  margin: 15px;
-  color: orange;
+.span_ingreso {
+	font-size: 12px;
+    margin: 15px;
+}
+
+.Ingresa{
+    font-size: 1rem;
 }
 
 a {
 	color: #333;
-	font-size: 14px;
+	font-size: 18px !important;
 	text-decoration: none;
-	margin: 15px 0;
+  margin: 15px 0;
+}
+
+a.active{
+  border: 2px solid #333;
+  border-radius: 10px;
 }
 
 button {
 	border-radius: 20px;
-	border: 1px solid #F2eee3;
-	background-color: #ffb158;
+	border: 2px solid #F2eee3;
+	background-color: #F2eee3;
 	color: black;
 	font-size: 12px;
 	font-weight: bold;
@@ -59,7 +78,7 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
-	border-color: rgba(255, 123, 0, 0.884);
+	border-color: rgb(255, 138, 28);
 }
 
 button:active {
@@ -71,11 +90,11 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
-	border-color: rgba(0, 0, 0, 0.884);
+	background-color: #ece3e3;
+	border-color: rgb(255, 255, 255);
 }
 
-.form-nav {
+.Form_ingreso {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -86,7 +105,7 @@ button.ghost {
 	text-align: center;
 }
 
-.input-nav {
+input {
 	background-color: #f2eee3;
 	border: none;
 	padding: 12px 15px;
@@ -97,7 +116,7 @@ button.ghost {
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
@@ -166,8 +185,12 @@ button.ghost {
 
 .overlay {
 	background: #F2eee3;
-	background: -webkit-linear-gradient(to right, #ffda76, #fc872e);
-	background: linear-gradient(to right, #ffda76, #fc872e);
+	background: -webkit-linear-gradient(to right, #ffb546, #ff9747);
+	background: radial-gradient(circle, rgba(252, 129, 63, 0.842) 0%, 
+                                        rgba(255,144,75,1) 25%, 
+                                        rgba(255,169,49,1) 50%, 
+                                        rgba(246,181,49,1) 75%, 
+                                        rgba(254,224,49,1) 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -176,12 +199,12 @@ button.ghost {
 	left: -100%;
 	height: 100%;
 	width: 200%;
-  transform: translateX(0);
+    transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
 
 .container.right-panel-active .overlay {
-  transform: translateX(50%);
+    transform: translateX(50%);
 }
 
 .overlay-panel {
@@ -216,10 +239,42 @@ button.ghost {
 	transform: translateX(20%);
 }
 
-.nav-link{
-    font-size:20px;
-    font-weight: 700;
+:root{
+    --facebook: #3b5999;
+    --instagram: #dd2a7b;
+    --youtube: #c4302b;
+    --whatsapp: #25D366;
 }
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 2px solid rgb(255, 138, 28);
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+	background: #f2eee3;
+}
+
+.facebook:hover{
+    background: var(--facebook)
+}
+
+.instagram:hover{
+    background: var(--instagram)
+}
+
+.whatapp:hover{
+    background: var(--whatsapp)
+}
+/* ------  Fin Pagina Registro ------*/
+
 
 /* hasta aca llega la barra de navegacion*/
 
@@ -314,6 +369,7 @@ color:rgb(0, 0, 0);
   position: relative;
   margin: 20px 0 40px 40px;
   width: 260px;
+  
 }
 
 .form-control2 input {
@@ -323,7 +379,7 @@ color:rgb(0, 0, 0);
   display: block;
   width: 100%;
   padding: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(255, 247, 247);
 }
 
@@ -402,26 +458,7 @@ textarea {
   transform: scale(0.95);
 }
 
-@media (max-width:780px){
-  form{
-    width: 90%;
-  }
 
-  .descrip{
-    padding: 5px;
-  }
-}
-
-@media (max-width:480px){
-  form{
-    width: 90%;
-  }
-
-  .descrip{
-    padding: 5px;
-    text-align: left;
-  }
-}
 
 /*fin pagina principal navegable*/
 
@@ -780,3 +817,80 @@ box-shadow:  -5px -5px 21px #b0631a,
     "atleta";
     }
   }
+
+/* --------------- Media querys Tablet --------------- */
+
+  @media (max-width:811px){
+    form{
+      width: 90%;
+    }
+  
+    .descrip{
+      padding: 5px;
+    }
+  
+    .form-contacto{
+      width: 80vw;
+  }
+  
+  .copy{
+    font-size: 1rem;
+  }
+  
+  ol, ul{
+    padding-left: 0;
+  }
+
+  .container2{
+    margin-inline: 10rem;
+  }
+
+  .mx-5{
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .border-warning, .border-dark{
+    max-width: 14rem !important;
+    margin-inline: 1rem;
+  }
+
+  }
+
+
+/* --------------- Media querys Mobil --------------- */
+
+  @media (max-width:480px){
+    form{
+      width: 90%;
+    }
+  
+    .descrip{
+      padding: 5px;
+      text-align: left;
+    }
+  
+    .form-contacto{
+    width: 90vw;
+  }
+
+  ol, ul {
+    padding-left: 0;
+  }
+
+  .container2{
+    margin-inline: 0;
+  }
+  
+  .placas {
+    display: contents;
+  }
+
+  .contenedor_4{
+    text-align: center;
+  }
+
+.coach2{
+  max-width: 90vw;
+}
+}

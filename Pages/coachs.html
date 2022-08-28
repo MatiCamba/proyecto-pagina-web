@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #fc8a3fe1;">
-            <div class="container-fluid ">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img src="../imagenes/logotitulo.png" alt="Logo" width="100%" height="90rem"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,120 +26,55 @@
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item px-1">
-                        <a class="nav-link " aria-current="page" href="./quienes-somos.html">Quienes Somos</a>
+                            <a class="nav-link " aria-current="page" href="quienes-somos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item px-1">
-                        <a class="nav-link" href="./que-es-crossfit.html">Que es Crossfit</a>
+                            <a class="nav-link " href="que-es-crossfit.html">Que es Crossfit</a>
                         </li>
                         <li class="nav-item px-1">
-                        <a class="nav-link active" href="./coachs.html">Coachs</a>
+                            <a class="nav-link active" href="coachs.html">Coachs</a>
                         </li>
                         <li class="nav-item dropdown px-1">
-                        <a class="nav-link dropdown-toggle" href="./programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./programas.html">Triskel60</a></li>
-                            <li><a class="dropdown-item" href="./programas.html">Masters</a></li>
-                            <li><a class="dropdown-item" href="./programas.html">Atleta</a></li>
-                        </ul>
+                            <a class="nav-link dropdown-toggle" href="programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="programas.html">Triskel60</a></li>
+                                <li><a class="dropdown-item" href="programas.html">Masters</a></li>
+                                <li><a class="dropdown-item" href="programas.html">Atleta</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                            <!-- Button trigger modal -->
-                        <li class="nav-item"></li>
-                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Ingresa / Resgistrate
-                        </button>
-                        <li class="nav-item">
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"><Strong> Ingresa / Resgitrate </Strong></h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container" id="container">
-                                        <div class="form-container sign-up-container">
-                                            <form class="form-nav" action="#">
-                                                <h1 Class="titulo-nav">Crea tu Cuenta</h1>
-                                                <div class="redes_container">
-                                                    <ul>
-                                                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                                                        <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="span-nav"><Strong>Ingresa tus Datos</Strong></span>
-                                                <input class="input-nav" type="text" placeholder="Nombre" />
-                                                <input class="input-nav" type="email" placeholder="Email" />
-                                                <input class="input-nav" type="password" placeholder="Contraseña" />
-                                                <button>Registrarse</button>
-                                            </form>
-                                        </div>
-                                        <div class="form-container sign-in-container">
-                                            <form class="form-nav" action="#">
-                                                <h1 Class="titulo-nav">Ingresar</h1>
-                                                <div class="redes_container">
-                                                    <ul>
-                                                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                                                        <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="span-nav"><Strong>Ingresa a tu cuenta</Strong></span>
-                                                <input class="input-nav" type="email" placeholder="Email" />
-                                                <input class="input-nav" type="password" placeholder="Contraseña" />
-                                                <a href="#">Olvidaste tu Contraseña?</a>
-                                                <button>Ingresar</button>
-                                            </form>
-                                        </div>
-                                        <div class="overlay-container">
-                                            <div class="overlay">
-                                                <div class="overlay-panel overlay-left">
-                                                    <h1 Class="titulo-nav">Bienvenido Atleta!</h1>
-                                                    <p class="p-nav">Para ingresar a tu Programa de entrenamiento, inicie sesion con sus datos personales</p>
-                                                    <button class="ghost" id="signIn">Ingresar</button>
-                                                </div>
-                                                <div class="overlay-panel overlay-right">
-                                                    <h1 Class="titulo-nav">Bienvenido a Triskel Balances Fitness</h1>
-                                                    <p class="p-nav">Por Favor ingresa tus datos personales para crear una cuenta y poder comenzar a elegir tu plan de entrenamiento</p>
-                                                    <button class="ghost" id="signUp">Registrate</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Volver</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                            <a class="nav-link" href="contactanos.html">Contactanos</a>
                         </li>
+
+                            <!-- Boton Ingresa/ Regristrate -->
+
+                            <a class="btn btn-outline-dark" href="Registro.html" target="_blank" role="button">Ingresa</a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+
+
     <section class="contenedor_4">
-        <H1 class="titulo__3">Coachs</H1>
+        <H1 class="titulo__3 animate__animated animate__lightSpeedInLeft">Coachs</H1>
         <section class="quehace">
         <H2 class="coach">Que hace un Coach???</H2>
         <br>
         <br>
-            <h3>BUSCA PERFECCIONAR EL MOVIMIENTO HUMANO</h3>
+        <h3>BUSCA PERFECCIONAR EL MOVIMIENTO HUMANO</h3>
         
-            <h4 class="">Para esto se basa en 3 variables que son fundamentales:</h4>
-            <br>
-            <div class="placas">
+        <h4>Para esto se basa en 3 variables que son fundamentales:</h4>
+        <br>
+        <div class="placas">
             <div class="card border-warning mb-3" style="max-width: 18rem;">
                 <div class="card-header"><strong>SEGURIDAD</strong></div>
                 <div class="card-body">
                     <p class="card-text">
-                    Sus atletas se mantienen sanos.
-                    -Sabe como adecuar el entrenamiento para que cada uno de sus alumnos reciban el estímulo buscado y que puedan seguir entrenando sin tener lesiones
-                    -Siempre hay riesgo a alguna lesión, pero, minimiza este riesgo usando la técnica, progresiones y carga adecuada para sus alumnos
+                        Sus atletas se mantienen sanos.
+                        -Sabe como adecuar el entrenamiento para que cada uno de sus alumnos reciban el estímulo buscado y que puedan seguir entrenando sin tener lesiones
+                        -Siempre hay riesgo a alguna lesión, pero, minimiza este riesgo usando la técnica, progresiones y carga adecuada para sus alumnos
                     </p>
                 </div>
             </div>
@@ -147,9 +82,9 @@
                 <div class="card-header"><strong>EFICACIA</strong></div>
                 <div class="card-body text-dark">
                     <p class="card-text">
-                    -Las adaptaciones/resultados del entrenamiento
-                    -Sus alumnos van mejorando y pueden realizar mas ejercicios y de mejor manera
-                    -Sus alumnos se vuelven mas fuertes y seguros al moverse
+                        -Las adaptaciones/resultados del entrenamiento
+                        -Sus alumnos van mejorando y pueden realizar mas ejercicios y de mejor manera
+                        -Sus alumnos se vuelven mas fuertes y seguros al moverse
                     </p>
                 </div>
             </div>
@@ -183,33 +118,38 @@
             🥉SER COACH es lo mas lindo que hay<br>
             </p>
         </div> 
-        </section>
-            <h2>Nuestro Head Coach</h2>
-                <div class="card mb-3" style="max-width: 610px;">
-                    <div class="row g-0">
+    </section>
+
+        <div Class="tarjeta-coach">
+            <h2 class="nuestro">Nuestro Head Coach</h2>
+            <div class="card mb-3" style="max-width: 610px;">
+                <div class="row g-0">
                         <div class="col-md-4">
                             <img src="../imagenes/Headcoach.png" class="img-fluid rounded-start" alt="Headcoach">
                         </div>
-                        <div class="col-md-8">
-                        <div class="card-body">
-                            <h4 class="card-title">Experciencia</h4>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Crossfit Level 1</li>
-                                    <li>Crossfit Gymnastic Level 1</li>
-                                    <li>Kettebell - Jeronimo Milo</li>
-                                    <li>Entrenamiento de la Fuerza - Ezequiel Costa</li>
-                                    <li>Kettebell - Mariano Ocampo</li>
-                                    <li>Oly Team - Fabian Pereyra</li>
-                                    <li>Instructor Level 1 - Ricky Wagner</li>
-                                </ul>
-                            </p>
-                        </div>
+                    <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Experciencia</h4>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Crossfit Level 1</li>
+                                        <li>Crossfit Gymnastic Level 1</li>
+                                        <li>Kettebell - Jeronimo Milo</li>
+                                        <li>Entrenamiento de la Fuerza - Ezequiel Costa</li>
+                                        <li>Kettebell - Mariano Ocampo</li>
+                                        <li>Oly Team - Fabian Pereyra</li>
+                                        <li>Instructor Level 1 - Ricky Wagner</li>
+                                    </ul>
+                                </p>
+                            </div>
                     </div>
                 </div>
-        </section>
-        <footer>
-            <h4>copyright - Todos los derechos reservados</h4>
+            </div>
+        </div>
+        
+
+        <footer class="footer">
+            <h4 Class="copy">copyright - Todos los derechos reservados</h4>
             <p>seguinos en nuetras redes</p>
             <div class="redes_container">
                 <ul>
@@ -220,6 +160,8 @@
                 </ul>
             </div>
         </footer>
+
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();

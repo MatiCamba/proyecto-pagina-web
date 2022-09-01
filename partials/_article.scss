@@ -1,0 +1,51 @@
+article h2{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color:rgb(255, 251, 251);
+    text-align: center;
+    line-height: 100px;
+
+    &:hover{
+    color:rgb(253, 108, 55);
+    text-shadow: 3px 5px 5px rgb(255, 255, 255);
+}
+
+}
+
+.quienessomos h2{
+    margin-top: 20px;
+    background-image: url("./imagenes/Fondo.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.queescrossfit h2{
+    background-image: url("./imagenes/queescrossfit2.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.coachs h2{
+    background-image: url("./imagenes/crossfit2.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.programas h2{
+    background-image: url("./imagenes/programas2.png");
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}

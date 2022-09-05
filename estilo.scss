@@ -1,13 +1,26 @@
-@import "./partials/variables";
+@import "./Assets/partials/variables";
 
-@import "./partials/_reset";
+@import "./Assets/partials/_reset";
 
-@import "./partials/header";
+@import "./Assets/partials/header";
 
-@import "./partials/registro";
+@import "./Assets/partials/paginas/registro";
 
-@import "./partials/article";
+@import "./Assets/partials/paginas/article";
 
-@import "./partials/Contacto";
+@import "./Assets/partials/paginas/Contacto";
 
-@import "./partials/footer";
+@import "./Assets/partials/footer";
+
+@import "./Assets/partials/paginas/Quines_Somos";
+
+@import "./Assets/partials/paginas/que_es_crossfit";
+
+@import "./Assets/partials/paginas/coachs";
+
+@import "./Assets/partials/paginas/programas";
+
+@import "./Assets/partials/medias_Tablet";
+
+@import "./Assets/partials/medias_mobile";
+

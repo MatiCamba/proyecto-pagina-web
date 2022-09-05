@@ -1,0 +1,73 @@
+.grid-layout{
+    display:grid;
+    grid-template-columns: 40% auto 40%;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "programas programas programas"
+    "triskel60 . ."
+    "triskel60 . master"
+    "atleta . master"
+    "atleta . .";
+    gap: 0 0;
+    width:90%;
+    margin: 0 auto;
+    padding: 20px;
+
+    .caja{
+        max-width: 100%;
+        margin: 0px 0 100px 0;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 30px;
+    }
+
+    .c1{
+        grid-area: programas;
+        max-height: 40%;
+    }
+
+    .c2{
+        grid-area: triskel60;
+    }
+
+    .c3{
+        grid-area: master;
+    }
+
+    .c4{
+        grid-area: atleta;
+    }
+
+    .c2, .c3, .c4 {
+        border: 1px solid rgba(0, 0, 0, 0.237);
+        background-color: rgb(241, 239, 239);
+        transition: box-shadow 0.25s ease-in;
+
+        &:hover{
+            box-shadow: 
+            rgba(252,129,63,1) -5px 5px, 
+            rgba(255,144,75,1) -10px 10px, 
+            rgba(255,169,49,1) -15px 15px, 
+            rgba(246,181,49,1) -20px 20px, 
+            rgba(254,224,49,1) -25px 25px;
+        }
+
+        .imagen{
+            max-width: 80%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .titulo__4{
+            max-height: 100px;
+            margin: 10px;
+            padding: 20px;
+            font-size: auto;
+        }
+
+        .cajita{
+            Margin:10px;
+            padding: 10px;
+        }
+    }
+}

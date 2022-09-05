@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -12,12 +12,12 @@ Body {
   box-sizing: border-box;
   background-color:rgba(253, 249, 245, 0.904);
   overflow-x: hidden;
-}
+}*/
 
 /* Nav-Bar */
 
 /* ------ Pagina Registro ------*/
-
+/*
 .Body_registro {
 	background: #f6f5f7;
 	display: flex;
@@ -27,17 +27,17 @@ Body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-}
-
+}*/
+/*
 h1 {
 	font-weight: bold;
 	margin: 0;
-}
+}*/
 
 /* buscar*/
-h2 {
+/*h2 {
 	text-align: center;
-}
+}*/
 
 p {
 	font-size: 14px;
@@ -241,12 +241,7 @@ input {
 	transform: translateX(20%);
 }
 
-:root{
-    --facebook: #3b5999;
-    --instagram: #dd2a7b;
-    --youtube: #c4302b;
-    --whatsapp: #25D366;
-}
+
 
 .social-container {
 	margin: 20px 0;
@@ -279,7 +274,7 @@ input {
 /* Fin de Pagina index.html*/
 
 /* Inicio quienes somos*/
-
+/*
 .contenedor_2 {
   display: grid; 
   grid-template-columns: 1fr; 
@@ -291,8 +286,8 @@ input {
     "seccion2"
     "seccion3"
     "seccion4";
-}
-
+}*/
+/*
 .titulo__3 { 
   grid-area: titulo__3; 
   max-width: 70%;
@@ -304,8 +299,8 @@ input {
   text-align: center;
   font-size: 70px;
   font-weight: 700;
-}
-
+}*/
+/*
 .seccion1 { 
   grid-area: seccion1;
   max-width: 70%;
@@ -314,8 +309,8 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
+}*/
+/*
 .seccion2 {
   grid-area: seccion2; 
   max-width: 70%;
@@ -324,8 +319,8 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
+}*/
+/*
 .seccion3 { 
   grid-area: seccion3; 
   max-width: 70%;
@@ -334,8 +329,8 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
+}*/
+/*
 .seccion4 { 
   grid-area: seccion4; 
   max-width: 70%;
@@ -344,94 +339,94 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
+}*/
+/*
 .titulo_5{
   font-size: 30px;
   text-align: center;
-}
-
+}*/
+/*
 .Accesoprogramas{
   color:black;
   text-decoration: none;
-}
+}*/
 /* Fin de quienes somos*/
 
 /* inicio que es crossfit*/
 
-.container2{
+/*.container2{
 margin-inline: 10rem;
-}
-
+}*/
+/*
 .accordion-header{
   font-size: 25px;
-}
-
+}*/
+/*
 .accordion-button {
   font-size: inherit;
-}
-
+}*/
+/*
 .accordion-item {
-  border: 1px solid rgba(36,65 100, 0.15)
-}
+  border: 1px solid  rgba(36,64, 100, 0.15)
+}*/
 
-.accordion-button:not(.collapsed){
+/*.accordion-button:not(.collapsed){
   color: inherit;
   background-color: #F09819;
   color:rgb(255, 255, 255)
-}
-
+}*/
+/*
 .accordion-button:not(.collapsed)::after{
   filter: brightness(0%) invert(100%)
-}
-
+}*/
+/*
 .accordion-button:focus{
 
 background: linear-gradient(315deg, #ff9327, #dd7b20);
 box-shadow:  -5px -5px 21px #b0631a,
             5px 5px 21px #ffaf2e;
-}
+}*/
 /* Aqui Termina Que es Crossfit*/
 
 /* Aqui comienza Coachs*/
-
+/*
 .contenedor_4 {
   display: flex; 
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-  
-}
+}*/
+/*
 .coach{
   margin: 50px;
-}
+}*/
 
-.quehace{
+/*.quehace{
   display: flex; 
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-}
-
+}*/
+/*
 .placas{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin: 50px 0;
-}
-
+}*/
+/*
 .coach2{
   max-height: 70vh;
   max-width: 60vw;
   margin-bottom: 50px;
-}
+}/*
 
 
 /* Aqui Termina Coachs*/
 
   /* Aqui comienza Programas*/
 
-  .grid-layout{
+/*  .grid-layout{
     display:grid;
     grid-template-columns: 40% auto 40%;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
@@ -445,58 +440,57 @@ box-shadow:  -5px -5px 21px #b0631a,
     width:90%;
     margin: 0 auto;
     padding: 20px;
-  }
+  }*/
 
-  .imagen{
+ /* .imagen{
     max-width: 80%;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
+  }*/
 
-  .titulo__4{
+/*  .titulo__4{
     max-height: 100px;
     margin: 10px;
     padding: 20px;
     font-size: auto;
-  }
+  }*/
 
-  .caja{
+  /*.caja{
     max-width: 100%;
     margin: 0px 0 100px 0;
     text-align: center;
     line-height: 20px;
     border-radius: 30px;
-  }
+  }*/
 
-  .c1{
+  /*.c1{
     grid-area: programas;
     max-height: 40%;
-    
-    }
+    }*/
 
-  .c2{
+  /*.c2{
     grid-area: triskel60;
     border: 1px solid rgba(0, 0, 0, 0.237);
     background-color: rgb(241, 239, 239);
     transition: box-shadow 0.25s ease-in;
-    }
+    }*/
 
-    .c2:hover{
+    /*.c2:hover{
     box-shadow: 
     rgba(252,129,63,1) -5px 5px, 
     rgba(255,144,75,1) -10px 10px, 
     rgba(255,169,49,1) -15px 15px, 
     rgba(246,181,49,1) -20px 20px, 
     rgba(254,224,49,1) -25px 25px;
-    }
+    }*/
 
-  .c3{
+  /*.c3{
     grid-area: master;
     border: 1px solid rgba(0, 0, 0, 0.237);
     background-color: rgb(241, 239, 239);
     transition: box-shadow 0.25s ease-in;
-    }
-
+    }*/
+/*
     .c3:hover{
       box-shadow: 
       rgba(252,129,63,1) -5px 5px, 
@@ -504,15 +498,15 @@ box-shadow:  -5px -5px 21px #b0631a,
       rgba(255,169,49,1) -15px 15px, 
       rgba(246,181,49,1) -20px 20px, 
       rgba(254,224,49,1) -25px 25px;
-      }
+      }*/
 
-  .c4{
+  /*.c4{
     grid-area: atleta;
     border: 1px solid rgba(0, 0, 0, 0.237);
     background-color: rgb(241, 239, 239);
     transition: box-shadow 0.25s ease-in;
-  }
-
+  }*/
+/*
   .c4:hover{
     box-shadow: 
     rgba(252,129,63,1) -5px 5px, 
@@ -520,17 +514,17 @@ box-shadow:  -5px -5px 21px #b0631a,
     rgba(255,169,49,1) -15px 15px, 
     rgba(246,181,49,1) -20px 20px, 
     rgba(254,224,49,1) -25px 25px;
-    }
+    }*/
 
 
-  .cajita{
+/*  .cajita{
     Margin:10px;
     padding: 10px;
-  }
+  }*/
 
-  @media (max-width: 780px){
-.grid-layout{
-  grid-template-columns: 1fr;
+/*  @media (max-width: 780px){
+  .grid-layout{
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: 
     "programas"
@@ -538,10 +532,10 @@ box-shadow:  -5px -5px 21px #b0631a,
     "master"
     "atleta";
     }
-  }
+  }*/
 
 /* --------------- Media querys Tablet --------------- */
-
+/*
   @media (max-width:811px){
     form{
       width: 90%;
@@ -567,6 +561,10 @@ box-shadow:  -5px -5px 21px #b0631a,
     margin-inline: 10rem;
   }
 
+  .titulo__3 {
+    margin-top: 5px;
+    }
+
   .mx-5{
     margin-right: 1rem !important;
     margin-left: 1rem !important;
@@ -577,11 +575,20 @@ box-shadow:  -5px -5px 21px #b0631a,
     margin-inline: 1rem;
   }
 
-  }
+  .grid-layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: 
+    "programas"
+    "triskel60"
+    "master"
+    "atleta";
+    }
+  }*/
 
 
 /* --------------- Media querys Mobil --------------- */
-
+/*
   @media (max-width:480px){
 
     header{
@@ -604,6 +611,10 @@ box-shadow:  -5px -5px 21px #b0631a,
     background-size:100vh;
     }
 
+    .titulo__3 {
+    margin-top: 5px;
+    }
+
     form{
       width: 90%;
     }
@@ -615,25 +626,25 @@ box-shadow:  -5px -5px 21px #b0631a,
   
     .form-contacto{
     width: 90vw;
-  }
+    }
 
-  ol, ul {
+    ol, ul {
     padding-left: 0;
-  }
+    }
 
-  .container2{
+    .container2{
     margin-inline: 0;
-  }
+      }
   
-  .placas {
+    .placas {
     display: contents;
-  }
+    }
 
-  .contenedor_4{
+    .contenedor_4{
     text-align: center;
-  }
+    }
 
-.coach2{
+  .coach2{
   max-width: 90vw;
-}
-}
+  }
+}*/

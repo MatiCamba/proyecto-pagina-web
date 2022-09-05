@@ -221,13 +221,6 @@ input {
 	transform: translateX(20%);
 }
 
-:root{
-    --facebook: #3b5999;
-    --instagram: #dd2a7b;
-    --youtube: #c4302b;
-    --whatsapp: #25D366;
-}
-
 .social-container {
 	margin: 20px 0;
 }
@@ -244,14 +237,14 @@ input {
 	background: #f2eee3;
 }
 
-.facebook:hover{
-    background: var($facebook);
+.facebook{
+    @include redes($facebook);
 }
 
-.instagram:hover{
-    background: var($instagram);
+.instagram{
+    @include redes($instagram);
 }
 
-.whatapp:hover{
-    background: var($whatsapp);
+.whatapp{
+    @include redes($whatsapp);
 }

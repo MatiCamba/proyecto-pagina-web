@@ -6,3 +6,9 @@ $facebook: #3b5999;
 $instagram: #dd2a7b;
 $youtube: #c4302b;
 $whatsapp: #25D366;
+
+@mixin redes($hover) {
+    &:hover {
+        background-color: $hover;
+    }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width:811px){
+
+header{
+    height: 18vh;
+}
+
+form{
+    width: 90%;
+}
+
+.descrip{
+    padding: 5px;
+}
+
+.form-contacto{
+    width: 80vw;
+
+    .descrip{
+        padding: 5px;
+    }
+}
+
+.copy{
+    font-size: 1rem;
+}
+
+ol, ul{
+    padding-left: 0;
+}
+
+.container2{
+    margin-inline: 10rem;
+}
+
+
+.mx-5{
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+
+.border-warning, .border-dark{
+    max-width: 14rem !important;
+    margin-inline: 1rem;
+}
+
+.grid-layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: 
+    "programas"
+    "triskel60"
+    "master"
+    "atleta";
+    }
+}

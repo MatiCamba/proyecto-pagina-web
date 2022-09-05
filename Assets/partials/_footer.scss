@@ -43,24 +43,16 @@ footer{
             }
         }
             .facebook{
-            &:hover{
-            background: var($facebook)
-            }
+            @include redes ($facebook);
         }
             .instagram{
-            &:hover{
-            background: var($instagram)
-            }
+                @include redes ($instagram);
         }
             .youtube{
-                &:hover{
-            background: var($youtube)
-            }
+                @include redes ($youtube);
         }
             .whatsapp{
-                &:hover{
-            background: var($whatsapp)
-            }
+                @include redes ($whatsapp);
         }
     }
     }

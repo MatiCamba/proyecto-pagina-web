@@ -297,28 +297,28 @@ article h2:hover {
 
 .quienessomos h2 {
   margin-top: 20px;
-  background-image: url("../../../imagenes/quinessomos2.jpg");
+  background-image: url("../../imagenes/Fondo.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .queescrossfit h2 {
-  background-image: url("./imagenes/queescrossfit2.png");
+  background-image: url("../../imagenes/queescrossfit2.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .coachs h2 {
-  background-image: url("./imagenes/crossfit2.png");
+  background-image: url("../../imagenes/crossfit2.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .programas h2 {
-  background-image: url("./imagenes/programas2.png");
+  background-image: url("../../imagenes/programas2.png");
   background-size: contain;
   background-position: center center;
   background-attachment: fixed;
@@ -748,24 +748,18 @@ footer .redes_container ul:hover a {
   .container2 {
     margin-inline: 0;
   }
-  .contenedor_4 .quehace {
-    max-width: 90vw;
-    text-align: center;
-  }
-  .contenedor_4 .quehace .coach {
-    margin: 50px 0;
-  }
-  .contenedor_4 .quehace .placas {
+  .placas {
     display: contents;
   }
-  .contenedor_4 .quehace .coach2 {
-    max-height: 100vh;
-    max-width: 70vw;
+  .contenedor_4 {
+    text-align: center;
   }
-  .border-warning, .border-dark {
-    max-width: 18rem !important;
+  .coach2 {
+    max-width: 90vw;
   }
   .grid-layout {
-    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: "programas" "triskel60" "master" "atleta";
   }
 }/*# sourceMappingURL=estilo.css.map */

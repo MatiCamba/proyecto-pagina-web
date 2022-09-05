@@ -1,0 +1,73 @@
+@media screen and (max-width:480px) {
+
+    header{
+        height: 15vh;
+        margin-bottom: 50px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+
+    article h2{
+        height: 40vh;
+    }
+
+    .quienessomos h2{
+        background-size:100vh;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .descrip{
+        width: 100%;
+        margin: 0px 10px 0 0px;
+        padding: 5px;
+        text-align: left;
+}
+
+    .form-contacto{
+        width: 90vw;
+}
+
+    ol, ul {
+        padding-left: 0;
+}
+
+    .container2{
+        margin-inline: 0;
+}
+
+    .contenedor_4 .quehace {
+        max-width: 90vw;
+        text-align: center;
+
+        .coach {
+        margin: 50px 0;
+        }
+    
+        .placas {
+        display: contents;
+        }
+
+        .coach2{
+            max-height: 100vh;
+        max-width: 70vw;
+        }
+
+    }
+
+    .border-warning, .border-dark {
+        max-width: 18rem !important;
+    }
+
+    .grid-layout{
+        display: block;
+    }
+}

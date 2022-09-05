@@ -1,0 +1,43 @@
+.titulo__3 { 
+    max-width: 70%;
+    margin-top: 50px;
+    margin-inline: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.container2{
+    margin-inline: 10rem;
+
+    .accordion-header{
+        font-size: 25px;
+    }
+
+    .accordion-button {
+        font-size: inherit;
+
+        &:not(.collapsed){
+            color: inherit;
+            background-color: #F09819;
+            color:rgb(255, 255, 255)
+        }
+
+        &:not(.collapsed)::after{
+            filter: brightness(0%) invert(100%)
+        }
+
+        &:focus{
+            background: linear-gradient(315deg, #ff9327, #dd7b20);
+            box-shadow:  -5px -5px 21px #b0631a,
+                        5px 5px 21px #ffaf2e;
+            }
+    }
+
+    .accordion-item {
+        border: 1px solid rgba(36,64, 100, 0.15);
+    }
+}

@@ -28,21 +28,21 @@
 
     .c2{
         grid-area: triskel60;
+        @include programas(1px solid rgba(0, 0, 0, 0.237), rgb(241, 239, 239), box-shadow 0.25s ease-in);
     }
 
     .c3{
         grid-area: master;
+        @include programas(1px solid rgba(0, 0, 0, 0.237), rgb(241, 239, 239), box-shadow 0.25s ease-in);
     }
 
     .c4{
         grid-area: atleta;
+        @include programas(1px solid rgba(0, 0, 0, 0.237), rgb(241, 239, 239), box-shadow 0.25s ease-in);
     }
 
     .c2, .c3, .c4 {
-        border: 1px solid rgba(0, 0, 0, 0.237);
-        background-color: rgb(241, 239, 239);
-        transition: box-shadow 0.25s ease-in;
-
+        
         &:hover{
             box-shadow: 
             rgba(252,129,63,1) -5px 5px, 

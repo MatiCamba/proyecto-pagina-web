@@ -263,15 +263,19 @@ input {
   background: #f2eee3;
 }
 
-.facebook:hover {
+.fa-facebook:hover {
   background-color: #3b5999;
 }
 
-.instagram:hover {
+.fa-instagram:hover {
   background-color: #dd2a7b;
 }
 
-.whatapp:hover {
+.fa-youtube:hover {
+  background-color: #c4302b;
+}
+
+.fa-whatsapp:hover {
   background-color: #25D366;
 }
 
@@ -286,7 +290,8 @@ article h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 60px;
-  color: rgb(255, 251, 251);
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: rgb(253, 108, 55) 1px;
   text-align: center;
   line-height: 100px;
 }
@@ -297,7 +302,7 @@ article h2:hover {
 
 .quienessomos h2 {
   margin-top: 20px;
-  background-image: url("../../../imagenes/quinessomos2.jpg");
+  background-image: url("../../../imagenes/CrossFit2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -319,7 +324,7 @@ article h2:hover {
 
 .programas h2 {
   background-image: url("./imagenes/programas2.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
@@ -439,7 +444,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* no se bien donde colocarlo*/
 }
 footer p {
   font-size: 20px;
@@ -473,16 +477,16 @@ footer .redes_container ul li a:hover {
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
 }
-footer .redes_container ul li .facebook:hover {
+footer .facebook:hover {
   background-color: #3b5999;
 }
-footer .redes_container ul li .instagram:hover {
+footer .instagram:hover {
   background-color: #dd2a7b;
 }
-footer .redes_container ul li .youtube:hover {
+footer .youtube:hover {
   background-color: #c4302b;
 }
-footer .redes_container ul li .whatsapp:hover {
+footer .whatsapp:hover {
   background-color: #25D366;
 }
 footer .redes_container ul:hover a {
@@ -593,13 +597,7 @@ footer .redes_container ul:hover a {
   border: 1px solid rgba(36, 64, 100, 0.15);
 }
 
-.contenedor_4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor_4 .quehace {
+.contenedor_4, .contenedor_4 .quehace {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -643,15 +641,19 @@ footer .redes_container ul:hover a {
 }
 .grid-layout .c2 {
   grid-area: triskel60;
+  Border: 1px solid rgba(0, 0, 0, 0.237);
+  background-color: rgb(241, 239, 239);
+  transition: box-shadow 0.25s ease-in;
 }
 .grid-layout .c3 {
   grid-area: master;
+  Border: 1px solid rgba(0, 0, 0, 0.237);
+  background-color: rgb(241, 239, 239);
+  transition: box-shadow 0.25s ease-in;
 }
 .grid-layout .c4 {
   grid-area: atleta;
-}
-.grid-layout .c2, .grid-layout .c3, .grid-layout .c4 {
-  border: 1px solid rgba(0, 0, 0, 0.237);
+  Border: 1px solid rgba(0, 0, 0, 0.237);
   background-color: rgb(241, 239, 239);
   transition: box-shadow 0.25s ease-in;
 }
@@ -743,7 +745,7 @@ footer .redes_container ul:hover a {
     width: 90vw;
   }
   ol, ul {
-    padding-left: 0;
+    padding-left: 15px;
   }
   .container2 {
     margin-inline: 0;

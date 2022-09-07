@@ -5,10 +5,7 @@
     align-items: center;
     
     .quehace{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
+        @extend .contenedor_4;
 
         .coach{
             margin: 50px;

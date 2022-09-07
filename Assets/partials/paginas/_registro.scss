@@ -237,14 +237,8 @@ input {
 	background: #f2eee3;
 }
 
-.facebook{
-    @include redes($facebook);
-}
-
-.instagram{
-    @include redes($instagram);
-}
-
-.whatapp{
-    @include redes($whatsapp);
+@each $redsocial, $color in $redes {
+	.fa-#{$redsocial}:hover{
+		background-color: $color;
+	}
 }

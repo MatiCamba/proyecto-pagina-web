@@ -2,13 +2,24 @@
 
 $FontOpen: 'Open Sans', sans-serif;
 
-$facebook: #3b5999;
-$instagram: #dd2a7b;
-$youtube: #c4302b;
-$whatsapp: #25D366;
-
-@mixin redes($hover) {
-    &:hover {
-        background-color: $hover;
-    }
+@mixin foto($bgsize, $bgposicion, $bgattach) {
+    background-size: $bgsize;
+    background-position: $bgposicion;
+    background-attachment: $bgattach;
 }
+
+
+$redes:(
+        facebook: #3b5999,
+        instagram: #dd2a7b,
+        youtube: #c4302b,
+        whatsapp: #25D366 
+    );
+
+@mixin programas($borde, $backColor,$transicion) {
+    Border: $borde;
+    background-color: $backColor;
+    transition: $transicion;
+}
+
+

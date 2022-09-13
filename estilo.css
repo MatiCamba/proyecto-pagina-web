@@ -18,6 +18,7 @@ Header {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
 }
 
 .Body_registro {
@@ -82,6 +83,7 @@ button {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   border-color: rgb(255, 138, 28);
+  cursor: pointer;
 }
 
 button:active {
@@ -263,26 +265,36 @@ input {
   background: #f2eee3;
 }
 
-.fa-facebook:hover {
+.facebook:hover {
   background-color: #3b5999;
 }
 
-.fa-instagram:hover {
+.instagram:hover {
   background-color: #dd2a7b;
 }
 
-.fa-youtube:hover {
+.youtube:hover {
   background-color: #c4302b;
 }
 
-.fa-whatsapp:hover {
+.whatsapp:hover {
   background-color: #25D366;
+}
+
+.navegador2 {
+  display: Flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  width: 99%;
+  margin-top: 8%;
+  z-index: 0;
 }
 
 article h2 {
   margin: 20px auto;
-  width: 80%;
-  height: 70vh;
+  width: 93%;
+  height: 90vh;
   border-radius: 30px;
   display: flex;
   justify-content: center;

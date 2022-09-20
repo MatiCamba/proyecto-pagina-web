@@ -18,6 +18,92 @@ Header {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.borde_lateral {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  right: 10px;
+  top: 330px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  z-index: 1;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  right: 60px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .dumbbell:hover,
+.wrapper .dumbbell:hover .tooltip,
+.wrapper .dumbbell:hover .tooltip::before {
+  background: #f29b18;
+  color: #ffffff;
 }
 
 .Body_registro {
@@ -43,7 +129,7 @@ h2 {
 
 p {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 600;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
@@ -82,6 +168,7 @@ button {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   border-color: rgb(255, 138, 28);
+  cursor: pointer;
 }
 
 button:active {
@@ -271,14 +358,28 @@ input {
   background-color: #dd2a7b;
 }
 
-.whatapp:hover {
+.youtube:hover {
+  background-color: #c4302b;
+}
+
+.whatsapp:hover {
   background-color: #25D366;
+}
+
+.navegador2 {
+  display: Flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  width: 99%;
+  margin-top: 8%;
+  z-index: 0;
 }
 
 article h2 {
   margin: 20px auto;
-  width: 80%;
-  height: 70vh;
+  width: 93%;
+  height: 90vh;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -286,7 +387,8 @@ article h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 60px;
-  color: rgb(255, 251, 251);
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: rgb(253, 108, 55) 1px;
   text-align: center;
   line-height: 100px;
 }
@@ -297,29 +399,29 @@ article h2:hover {
 
 .quienessomos h2 {
   margin-top: 20px;
-  background-image: url("../../imagenes/Fondo.png");
+  background-image: url("./imagenes/CrossFit2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .queescrossfit h2 {
-  background-image: url("../../imagenes/queescrossfit2.png");
+  background-image: url("./imagenes/queescrossfit2.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .coachs h2 {
-  background-image: url("../../imagenes/crossfit2.png");
+  background-image: url("./imagenes/crossfit2.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
 .programas h2 {
-  background-image: url("../../imagenes/programas2.png");
-  background-size: contain;
+  background-image: url("./imagenes/programas2.png");
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
@@ -439,7 +541,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* no se bien donde colocarlo*/
 }
 footer p {
   font-size: 20px;
@@ -473,16 +574,16 @@ footer .redes_container ul li a:hover {
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
 }
-footer .redes_container ul li .facebook:hover {
+footer .facebook:hover {
   background-color: #3b5999;
 }
-footer .redes_container ul li .instagram:hover {
+footer .instagram:hover {
   background-color: #dd2a7b;
 }
-footer .redes_container ul li .youtube:hover {
+footer .youtube:hover {
   background-color: #c4302b;
 }
-footer .redes_container ul li .whatsapp:hover {
+footer .whatsapp:hover {
   background-color: #25D366;
 }
 footer .redes_container ul:hover a {
@@ -492,7 +593,7 @@ footer .redes_container ul:hover a {
 .contenedor_2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr auto auto auto 1.5fr;
+  grid-template-rows: 0.4fr auto auto auto 1.6fr;
   gap: 30px 0px;
   grid-template-areas: "titulo__3" "seccion1" "seccion2" "seccion3" "seccion4";
 }
@@ -593,13 +694,7 @@ footer .redes_container ul:hover a {
   border: 1px solid rgba(36, 64, 100, 0.15);
 }
 
-.contenedor_4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor_4 .quehace {
+.contenedor_4, .contenedor_4 .quehace {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -643,15 +738,19 @@ footer .redes_container ul:hover a {
 }
 .grid-layout .c2 {
   grid-area: triskel60;
+  Border: 1px solid rgba(0, 0, 0, 0.237);
+  background-color: rgb(241, 239, 239);
+  transition: box-shadow 0.25s ease-in;
 }
 .grid-layout .c3 {
   grid-area: master;
+  Border: 1px solid rgba(0, 0, 0, 0.237);
+  background-color: rgb(241, 239, 239);
+  transition: box-shadow 0.25s ease-in;
 }
 .grid-layout .c4 {
   grid-area: atleta;
-}
-.grid-layout .c2, .grid-layout .c3, .grid-layout .c4 {
-  border: 1px solid rgba(0, 0, 0, 0.237);
+  Border: 1px solid rgba(0, 0, 0, 0.237);
   background-color: rgb(241, 239, 239);
   transition: box-shadow 0.25s ease-in;
 }
@@ -668,6 +767,7 @@ footer .redes_container ul:hover a {
   margin: 10px;
   padding: 20px;
   font-size: auto;
+  font-weight: bold;
 }
 .grid-layout .c2 .cajita, .grid-layout .c3 .cajita, .grid-layout .c4 .cajita {
   Margin: 10px;
@@ -712,6 +812,9 @@ footer .redes_container ul:hover a {
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: "programas" "triskel60" "master" "atleta";
   }
+  .borde_lateral {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   header {
@@ -743,23 +846,32 @@ footer .redes_container ul:hover a {
     width: 90vw;
   }
   ol, ul {
-    padding-left: 0;
+    padding-left: 15px;
   }
   .container2 {
     margin-inline: 0;
   }
-  .placas {
-    display: contents;
-  }
-  .contenedor_4 {
+  .contenedor_4 .quehace {
+    max-width: 90vw;
     text-align: center;
   }
-  .coach2 {
-    max-width: 90vw;
+  .contenedor_4 .quehace .coach {
+    margin: 50px 0;
+  }
+  .contenedor_4 .quehace .placas {
+    display: contents;
+  }
+  .contenedor_4 .quehace .coach2 {
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+  .border-warning, .border-dark {
+    max-width: 18rem !important;
   }
   .grid-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
-    grid-template-areas: "programas" "triskel60" "master" "atleta";
+    display: block;
+  }
+  .programas h2 {
+    background-size: auto;
   }
 }/*# sourceMappingURL=estilo.css.map */

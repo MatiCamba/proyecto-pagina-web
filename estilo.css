@@ -399,7 +399,7 @@ article h2:hover {
 
 .quienessomos h2 {
   margin-top: 20px;
-  background-image: url("../../../imagenes/CrossFit2.jpg");
+  background-image: url("./imagenes/CrossFit2.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

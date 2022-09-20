@@ -33,7 +33,7 @@ article h2{
 
 .quienessomos h2{
     margin-top: 20px;
-    background-image: url("../../../imagenes/CrossFit2.jpg");
+    background-image: url("./imagenes/CrossFit2.jpg");
     @include foto(cover, center center, fixed);
 }
 
